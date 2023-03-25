@@ -110,8 +110,30 @@ body
 }
 
 
-
-
+.Images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 5px;
+  }
+  
+  figure {
+	margin: 10px;
+	text-align: center;
+  }
+  
+  img {
+	width: 60%;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  }
+  
+  figcaption {
+	margin-top: 5px;
+	font-size: 14px;
+	font-style: italic;
+  }
 
 
 
