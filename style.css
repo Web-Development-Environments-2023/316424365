@@ -4,7 +4,7 @@
 	width: 100%;
 	top: 0%;
 	left: 0;
-	background-color:black;
+	background-color:rgb(2, 2, 27);
 	padding: 1px 10px 0;
 	box-sizing:content-box;
 	z-index: 1;
@@ -32,7 +32,7 @@
 #menu li a:hover
 {
 	background-color: #666;
-	border-bottom-color:orange;
+	border-bottom-color:yellow;
 }
 
 
@@ -46,3 +46,74 @@
 	margin-right: 80px;
 	;
 }
+
+body
+{
+	background-color:rgba(255, 255, 255, 0.792);
+}
+
+.sectionTitle {
+	position: relative;
+}
+  
+.sectionTitle:before,
+.sectionTitle:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	height: 4px;
+	background-color: gray;
+}
+
+.sectionTitle:before {
+	left: 0;
+	width: 42%;
+}
+
+.sectionTitle:after {
+	right: 0;
+	width: 42%;
+}
+
+#backgroundMorgan {
+	background-image: url("Images/Morgan Freeman background.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 580px;
+	height: 40vh;
+	filter: grayscale(50%);
+}
+
+.quote
+{
+	background-color:rgb(15, 15, 76);
+	padding: 20px;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	line-height: 1.5;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.quote p:first-of-type
+{
+	font-style: italic;
+	color: white;
+}
+  
+.quote .author
+{
+	font-weight: bold;
+	font-size: larger;
+	margin-top: 10px;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
