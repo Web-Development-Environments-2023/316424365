@@ -115,32 +115,36 @@ html
 }
 
 
-.Images {
+.Images
+{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 5px;
-  }
+}
   
-  figure {
+figure
+{
 	margin: 10px;
 	text-align: center;
-  }
+}
   
-  img {
+img
+{
 	width: 60%;
 	height: auto;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-  }
+}
   
-  figcaption {
+figcaption
+{
 	margin-top: 5px;
 	font-size: 14px;
 	font-style: italic;
-  }
+}
 
-  #qrCode
+#qrCode
 {
 	background-image: url("Images/qr_code.png");
 	background-size: contain;
@@ -150,6 +154,13 @@ html
 	filter: grayscale(50%);
 }
 
-
+#scanMeGif
+{
+	position: absolute;
+	bottom: 0;
+	margin-left: -10px;
+  	width: 90px;
+  	height: 90px; 
+}
 
 
