@@ -84,6 +84,11 @@ body
 	filter: grayscale(50%);
 }
 
+html
+{
+	scroll-behavior: smooth;
+}
+
 .quote
 {
 	background-color:rgb(15, 15, 76);
@@ -135,6 +140,15 @@ body
 	font-style: italic;
   }
 
+  #qrCode
+{
+	background-image: url("Images/qr_code.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-left: 580px;
+	height: 40vh;
+	filter: grayscale(50%);
+}
 
 
 
