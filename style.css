@@ -145,7 +145,7 @@ html
 	background-image: url("Images/qr_code.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-left: 580px;
+	margin-left: 520px;
 	height: 40vh;
 	filter: grayscale(50%);
 }
