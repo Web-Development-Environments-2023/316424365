@@ -2,8 +2,8 @@
 
 # **Web-Development-Environments-2023 Assignment1**
 ## **The following web page is about Morgan Freeman**
-Name: Itay Paikin
-Id: 316424365
+Name: Itay Paikin<br/>
+Id: 316424365<br/>
 github.io URL: https://web-development-environments-2023.github.io/316424365/
 
 This page was built for Morgan Freeman. On this page you can find information about him, a variety of photos from key moments in his life and career with descriptions and explanations and hear about the music he likes. In addition, you can like the page if you like, contact me by sending an email for any purpose you want and more.
