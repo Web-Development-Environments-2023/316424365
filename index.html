@@ -367,11 +367,13 @@ Hope to hear from you soon...
   <br>
   <br>
   <label for="emoji">Emoji:</label>
-  <select id="emoji" name="emoji">
+  <select id="emoji" name="emoji" onchange="addEmoji()">
     <option value="happy">&#x1F60A;</option> 
     <option value="sad">&#x1F622;</option>
     <option value="angry">&#x1F620;</option>
     <option value="love">&#x2764;&#xFE0F;</option>
+    <option value="heart eyes">&#128525;</option>
+    <option value="thinking">&#129300;</option>
   </select>
   <br>
   <br>
@@ -391,6 +393,43 @@ function removeCaption() {
 };
 </script>
 
+<script>
+  function addEmoji() {
+    var message = document.getElementById("message");
+    var emoji = document.getElementById("emoji");
+    var currSelectedEmoji = emoji.options[emoji.selectedIndex].value;
+    var selectedUnicode = "";
+    
+    switch (currSelectedEmoji) {
+      case "happy":
+      selectedUnicode = "\ud83d\ude03";
+        break;
+      case "sad":
+      selectedUnicode = "\ud83d\ude22";
+        break;
+      case "angry":
+      selectedUnicode = "\ud83d\ude20";
+        break;
+      case "love":
+      selectedUnicode = "\u2764\ufe0f";
+        break;
+      case "heart eyes":
+      selectedUnicode = "\ud83d\ude0d";
+        break;
+      case "thinking":
+      selectedUnicode = "\ud83e\udd14";
+        break;
+      default:
+        break;
+    }
+    
+    var messageBoxText = message.value;
+    messageBoxText += selectedUnicode;
+    message.value = messageBoxText;
+}
+</script>
+
+
 <script type="text/javascript">
 $(function(){
   $("#nav a").click(function(e){
@@ -406,3 +445,41 @@ $(function(){
  </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
