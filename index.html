@@ -358,16 +358,20 @@ Hope to hear from you soon...
   <input type="email" id="email" name="email" required>
   <br>
   <br>
+  <label for="subject"><b>Subject:</b></label>
+  <input type="text" id="subject" name="subject" required>
+  <br>
+  <br>
   <label for="message"><b>Message:</b></label>
-  <textarea id="message" name="message" required></textarea>
+  <textarea id="message" name="message" required placeholder="What would you like to write to me?" onfocus="removeCaption()"></textarea>
   <br>
   <br>
   <label for="emoji">Emoji:</label>
   <select id="emoji" name="emoji">
-    <option value="happy"></option> 
-    <option value="sad">😢</option>
-    <option value="angry">😠</option>
-    <option value="love">❤️</option>
+    <option value="happy">&#x1F60A;</option> 
+    <option value="sad">&#x1F622;</option>
+    <option value="angry">&#x1F620;</option>
+    <option value="love">&#x2764;&#xFE0F;</option>
   </select>
   <br>
   <br>
@@ -380,6 +384,12 @@ Hope to hear from you soon...
 <br/>
 </section>
 
+<script>
+function removeCaption() {
+  var messageBox = document.getElementById("message");
+  messageBox.placeholder = "";
+};
+</script>
 
 <script type="text/javascript">
 $(function(){
